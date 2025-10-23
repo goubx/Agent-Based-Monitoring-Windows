@@ -97,4 +97,57 @@ Invoke-WebRequest -Uri "https://sensor.cloud.tenable.com/install/agent/installer
 <img src="https://i.imgur.com/vq1Eq03.png" height="80%" width="80%" alt="Launch Command"/>
 <br />
 
-> Here is the installation occurring. It will take a few minutes for the installation to finish. 
+> Here is the installation occurring. It will take a few minutes for the installation to finish.
+
+<h3> Now my agent is installed on the VM. Below is a screenshot to confirm it is running in the background. </h3>
+
+<img src="https://i.imgur.com/q3Q1tJX.png" height="80%" width="80%" alt="Launch Command"/>
+<br />
+
+<h3> Now in PowerShell, I am going to add the file I created as the trigger into the trigger directory </h3>
+
+<img src="https://i.imgur.com/Wgh3Q1t.jpeg" height="80%" width="80%" alt="Launch Command"/>
+<br />
+
+The commands to create this in PowerShell are 
+
+> cd \
+
+> cd programdata
+
+> cd Tenable
+
+> cd '.\Nessus Agent\'
+
+> cd nessus
+
+> cd triggers
+
+> New-Item -Name goub.xt <---- Trigger File Name
+
+<img src="https://i.imgur.com/Wgh3Q1t.jpeg" height="80%" width="80%" alt="Trigger creation"/>
+<br />
+
+This is what it looks like before I add the file
+
+<h3> After adding the file, the scan should start. </h3>
+
+<img src="https://i.imgur.com/3apcJ6b.jpeg" height="80%" width="80%" alt="Trigger creation"/>
+<br />
+
+The scan has started since it was deleted from the trigger folder.
+
+As you can see below, the scan has been activated since it's running in the task manager. This is also confirmed because in my Tenable dashboard, the files are showing as "triggered".
+
+<img src="https://i.imgur.com/pNm67DZ.png" height="80%" width="80%" alt="Trigger creation"/>
+<br />
+
+<img src="https://i.imgur.com/pekkXyl.png" height="80%" width="80%" alt="Trigger creation"/>
+<br />
+
+Now I just have to wait for the results once the scan is complete.
+
+<img src="https://i.imgur.com/bpBgL8m.png" height="80%" width="80%" alt="Trigger creation"/>
+<br />
+
+<h1> With the scan now complete, I will upload the completed scan file. </h1>
