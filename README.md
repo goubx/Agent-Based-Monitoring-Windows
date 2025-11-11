@@ -150,9 +150,6 @@ Now I just have to wait for the results once the scan is complete.
 <img src="https://i.imgur.com/bpBgL8m.png" height="80%" width="80%" alt="Trigger creation"/>
 <br />
 
-<h2> It should look like this while the scan is running in Tenable. </h2>
-<br />
-
 <img src="https://i.imgur.com/bpBgL8m.png" height="80%" width="80%" alt="Trigger creation"/>
 <br />
 
